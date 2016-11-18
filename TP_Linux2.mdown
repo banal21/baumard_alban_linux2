@@ -17,10 +17,10 @@ Dans un premier temps j'ai créer ma machine virtuel, debian, en installant l'IS
 Avec l'utilisateur root, j'ai installé les paquets suivants:
 
 
-*lynx
-*sudo
-*tcpdump
-*vim
+* lynx
+* sudo
+* tcpdump
+* vim
 
 
 -
