@@ -1,0 +1,26 @@
+*** Code Markdown ***
+*********************
+
+Linux 2
+=
+TP1
+-
+###Création de réseau local#
+
+
+Première étape: créer sa machine virtuel debian.
+Dans un premier temps j'ai créer ma machine virtuel, debian, en installant l'ISO fournit par le professeur. Pour cela, j'ai utilisé VirtualBox. J'ai suivie l'installation de base de ma machine debian en créant mon utilisateur, son mot de passe, ainsi de suite jusqu'au choix des logiciels à installer. A ce moment j'ai coché que la case "Utilitaires usuels du système", comme demandé dans le TP. Ensuite la machine s'installe avec les bonnes configurations et on arrive à une interface de commande. A ce moment, je suis passé sur l'utilisateur root en faisant la commande:
+
+
+	su
+
+Avec l'utilisateur root, j'ai installé les paquets suivants:
+
+
+*lynx
+*sudo
+*tcpdump
+*vim
+
+
+
