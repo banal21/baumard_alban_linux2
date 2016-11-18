@@ -23,6 +23,24 @@ Avec l'utilisateur root, j'ai installé les paquets suivants:
 * vim
 
 
--
+Pour installer la commande sudo a mon utilisateur j'ai fait un:
+
+
+	'man sudoers'
+
+
+et puis:
+
+
+	'adduser alban sudo'
+
+
+	'su alban'
+
+
+et j'ai vérifié que la commande c'était bien éxécuté avec un:
+
+
+	'groups'
 
 
