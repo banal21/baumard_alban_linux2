@@ -23,6 +23,9 @@ Avec l'utilisateur root, j'ai installé les paquets suivants:
 * vim
 
 
+###Sudo#
+
+
 Pour installer la commande sudo a mon utilisateur j'ai fait un:
 
 
