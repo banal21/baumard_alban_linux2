@@ -47,3 +47,48 @@ et j'ai vérifié que la commande c'était bien éxécuté avec un:
 	'groups'
 
 
+###Clonage#
+
+
+Je clone ma debian trois fois, por créer le petit réseau demandé. Je les nommes "Gateway", "Client" et "Serveur_web".
+
+
+###Snapshot#
+
+
+Je fais un snapshot de ma debian de base avant de lancer la commande:
+
+
+	'$ rm -rf /'
+
+
+Qui efface tous les fichiers. 
+L'attribut -r permet d'effacer récursivement les sous-répertoires et le -f permet de ne pas demander de confirmaton d'effacement.
+
+
+Suite a ça, je tente de redémarrer la machine virtuel mais rien ne s'éxécute. Tout est effacer.
+Je redémarre ensuite la machine virtuel avec le snapshot réaliser avant le "rm". Tout fonctionne correcetement.
+
+
+###Configuration réseaux#
+
+
+Dans l'inteface de VirtualBox je modifie un paramètre réseau en sélectionnant dans "Modes d'accèes réseau": "Accès par pont".
+Je redémarre ensuite la machine, éxécute les commandes suivantes:
+
+	'$ ip addr'
+
+
+et:
+
+
+	'$ lynx'
+
+
+La commande ci-dessus, éxecute Lynx et affiche une sorte de documentation.
+Je fais un "maj g" et me connecte a duckduckgo.com sur ma machine virtuelle et a startpage.com sur mon hote. Etant connecté en wifi tout se passe bien. 
+Pour les besoins du TP je me connecte donc en filaire. Après mettre attribuer une addresse IP, j'éxecute lynx, et contrairement a avant il me demande de m'authentifier sur le portail de l'ENT. Je suis connecté et retourne sur duckduckgo.com, mais quand j'essaie de me reconnecter a startpage.com sur mon hôte, je n'ai plus de connexion en filaire.
+Le portail de l'ENT permet donc une seule connexion a un même compte.
+
+
+
