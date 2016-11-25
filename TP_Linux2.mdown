@@ -91,4 +91,40 @@ Pour les besoins du TP je me connecte donc en filaire. Après mettre attribuer u
 Le portail de l'ENT permet donc une seule connexion a un même compte.
 
 
+TP2
+-
+
+
+###Feuille de route#
+
+
+0) Dans vitual Box je configure ma machine "Gateway" en mettant le mode d'accès réseau a "accès par pont". Je démarre ma machine et je lance la commande suivante:
+
+
+	"$ sudo apt-get install ssh"
+
+
+Pour me connecter au serveur openssh je dois éditer le fichier de configuration a l'aide de la commande suivante:
+
+
+	"$ sudo nano /etc/ssh/sshd_config"
+
+
+En tant qu'utilisateur courant je me connecte mais aps avec l'utlisateur root.
+Ensuite je modifie le port d'écoute du serveur, en le mettant a 26 et je configure l'authentification en acceptant la connexion au compte root.
+Je redémarre le serveur ssh:
+
+
+	"$ sudo /etc/init.d/ssh restart"
+
+
+
+
+
+
+
+
+
+
+
 
